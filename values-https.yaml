@@ -64,11 +64,19 @@ global:
     hostSuffix:
     https: true
     externalIP: 185.124.178.22
-    ssh: ~
-    gitlab: {}
-    minio: {}
-    registry: {}
-    tls: {}
+    ssh: local
+    gitlab: 
+      name: gitlab.local
+      https: true
+    minio: 
+      name: minio.local
+      https: true
+    registry: 
+      name: registry.local
+      https: true
+    tls: 
+      https: true
+      secretName: wildcard-gitlab-local
     smartcard: {}
     kas: {}
     pages: {}
@@ -83,8 +91,8 @@ global:
     annotations: {}
     enabled: true
     tls: {}
-    #   enabled: true
-    #   secretName:
+      enabled: true
+      secretName: wildcard-gitlab-local
     path: /
     pathType: Prefix
 
