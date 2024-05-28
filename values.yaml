@@ -60,7 +60,7 @@ global:
     allowClusterRoles: true
   ## https://docs.gitlab.com/charts/charts/globals#configure-host-settings
   hosts:
-    domain: local
+    domain: debian
     hostSuffix:
     https: false
     externalIP: 192.168.1.25
