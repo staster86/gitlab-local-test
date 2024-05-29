@@ -11,7 +11,7 @@ metadata:
       proxy_send_timeout 300;
 spec:
   rules:
-  - host: gitlab.local
+  - host: gitlab.debian
     http:
       paths:
       - path: /

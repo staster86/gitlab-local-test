@@ -60,17 +60,21 @@ global:
     allowClusterRoles: true
   ## https://docs.gitlab.com/charts/charts/globals#configure-host-settings
   hosts:
-    domain: debian
+    domain: gitlab.debian
     hostSuffix:
     https: false
     externalIP: 192.168.1.25
     ssh: ~
-    gitlab: {}
-    minio: {}
-    registry: {}
+    gitlab: 
+      name: gitlab.debian
+    minio:
+      name: minio.debian
+    registry:
+      name: registry.debian
     tls: {}
     smartcard: {}
-    kas: {}
+    kas:
+      name: kas.debian
     pages: {}
 
   ## https://docs.gitlab.com/charts/charts/globals#configure-ingress-settings
