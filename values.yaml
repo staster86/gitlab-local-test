@@ -1244,9 +1244,9 @@ shared-secrets:
 ## Installation & configuration of gitlab/gitlab-runner
 ## See requirements.yaml for current version
 gitlab-runner:
-  install: true
+  install: false
   rbac:
-    create: true
+    create: false
   runners:
     locked: false
     # Set secret to an arbitrary value because the runner chart renders the gitlab-runner.secret template only if it is not empty.
