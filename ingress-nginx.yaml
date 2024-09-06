@@ -18,6 +18,6 @@ spec:
         pathType: ImplementationSpecific
         backend:
           service:
-            name: gitlab-webservice-default
+            name: gitlab-ce-webservice-default
             port:
               number: 8181
